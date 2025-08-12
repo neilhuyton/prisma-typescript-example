@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build && npx prisma generate"
+  functions = "netlify/functions"
+  publish = "dist"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/index/:splat"
+  status = 200
