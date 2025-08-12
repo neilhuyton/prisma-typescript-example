@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-   "build": "npx prisma generate && tsc && mkdir -p netlify/functions/@prisma/client netlify/functions/.prisma netlify/functions/prisma && cp -r dist/* netlify/functions && cp dist/routes/user.js netlify/functions/user.js && cp -r node_modules/@prisma/client/* netlify/functions/@prisma/client && cp -r node_modules/.prisma/* netlify/functions/.prisma && cp -r prisma/* netlify/functions/prisma"
+   "build": "npx prisma generate && tsc && mkdir -p netlify/functions/@prisma/client netlify/functions/.prisma netlify/functions/prisma && cp -r dist/* netlify/functions && cp dist/routes/user.js netlify/functions/user.js && cp -r node_modules/@prisma/client/* netlify/functions/@prisma/client && cp -r node_modules/.prisma/* netlify/functions/.prisma && cp -r prisma/* netlify/functions/prisma",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts"
   },
